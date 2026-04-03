@@ -15,5 +15,5 @@ jobs:
       - name: CI 동작 확인
         run: echo "Hello CI!"
 
-      - name: 일부러 실패
-        run: exit 1
+      - name: 일부러 실패 > 성공으로 수정
+        run: echo "success"
