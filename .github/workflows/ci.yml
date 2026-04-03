@@ -1,0 +1,16 @@
+name: CI Test
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v3
+
+      - name: CI 동작 확인
+        run: echo "Hello CI!"
